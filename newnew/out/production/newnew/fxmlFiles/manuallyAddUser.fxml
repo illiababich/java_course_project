@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="386.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxControllers.ManuallyAddUser">
+    <children>
+        <PasswordField fx:id="passwordField" layoutX="68.0" layoutY="47.0" promptText="Password" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="86.4" />
+        <TextField fx:id="loginField" layoutX="68.0" layoutY="14.0" promptText="Login" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="86.4" />
+        <RadioButton fx:id="radioP" layoutX="14.0" layoutY="216.0" mnemonicParsing="false" onAction="#enableFields" prefHeight="17.0" prefWidth="149.0" selected="true" text="Individual" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="248.0">
+            <toggleGroup>
+                <ToggleGroup fx:id="userType" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="radioC" layoutX="246.0" layoutY="216.0" mnemonicParsing="false" onAction="#enableFields" prefHeight="17.0" prefWidth="149.0" text="Company" toggleGroup="$userType" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="16.0" />
+        <TextField fx:id="personNameField" layoutX="14.0" layoutY="244.0" prefHeight="26.0" prefWidth="149.0" promptText="Name" />
+        <TextField fx:id="personSurnameField" layoutX="14.0" layoutY="277.0" prefHeight="26.0" prefWidth="149.0" promptText="Surname" />
+        <TextField fx:id="companyNameField" layoutX="246.0" layoutY="244.0" prefHeight="26.0" prefWidth="149.0" promptText="Company name" />
+        <TextField fx:id="companyCEOField" layoutX="246.0" layoutY="277.0" prefHeight="26.0" prefWidth="149.0" promptText="CEO" />
+        <TextField fx:id="companyPhoneField" layoutX="246.0" layoutY="309.0" prefHeight="26.0" prefWidth="149.0" promptText="Company phone number" />
+        <Button fx:id="createUserButton" layoutX="179.0" layoutY="277.0" mnemonicParsing="false" onAction="#createUser" text="Create!" />
+        <TextField fx:id="emailField" layoutX="67.0" layoutY="79.0" prefHeight="25.0" prefWidth="226.0" promptText="E-mail" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="87.0" />
+        <TextField fx:id="zipCodeField" layoutX="67.0" layoutY="148.0" prefHeight="25.0" prefWidth="226.0" promptText="Zip code" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="87.0" />
+        <DatePicker fx:id="personBirthDateField" layoutX="14.0" layoutY="309.0" prefHeight="25.0" prefWidth="149.0" promptText="Birth Date" />
+        <TextField fx:id="addressField" layoutX="67.0" layoutY="115.0" prefHeight="25.0" prefWidth="257.0" promptText="Address" />
+        <ComboBox fx:id="chooseUserType" layoutX="114.0" layoutY="181.0" onAction="#enableFields" prefWidth="150.0" promptText="Type of user" />
+        <TextField fx:id="personPhoneNumber" layoutX="14.0" layoutY="347.0" promptText="Phone Number" />
+    </children>
+</AnchorPane>

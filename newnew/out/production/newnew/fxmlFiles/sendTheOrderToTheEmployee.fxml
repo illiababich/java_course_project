@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="150.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlFiles.SendTheOrderToTheEmployee">
+   <children>
+      <Text layoutX="50.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Would you like to send your order to specific employee?" />
+      <Button fx:id="yesButton" layoutX="50.0" layoutY="75.0" mnemonicParsing="false" onAction="#YesButtonSelected" text="Yes" />
+      <Button fx:id="noButton" layoutX="316.0" layoutY="75.0" mnemonicParsing="false" onAction="#noButtonSelected" text="No" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxControllers.RemoveUser">
+   <children>
+      <ListView fx:id="allUsersList" layoutX="223.0" layoutY="14.0" prefHeight="299.0" prefWidth="361.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="deleteThisUserContextMenu" mnemonicParsing="false" text="Delete this user" />
+                  <MenuItem fx:id="viewInfoContextMenu" mnemonicParsing="false" text="View Info" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </ListView>
+      <TextField layoutX="14.0" layoutY="14.0" promptText="User ID" />
+      <TextField layoutX="14.0" layoutY="54.0" promptText="User login" />
+      <TextField layoutX="14.0" layoutY="94.0" promptText="User e-mail" />
+      <TextField layoutX="14.0" layoutY="134.0" promptText="User zip-code" />
+      <TextField layoutX="14.0" layoutY="174.0" promptText="User phone number" />
+      <Button fx:id="applyCriteriaAndSearchButton" layoutX="15.0" layoutY="287.0" mnemonicParsing="false" text="Apply criteria and search" />
+   </children>
+</AnchorPane>

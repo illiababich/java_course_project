@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="416.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxControllers.EditBook">
+    <children>
+        <TextField fx:id="bookTitle" layoutX="27.0" layoutY="14.0" prefHeight="26.0" prefWidth="198.0" promptText="Title" />
+        <TextArea fx:id="bookDescription" layoutX="27.0" layoutY="134.0" prefHeight="229.0" prefWidth="198.0" promptText="Description" />
+        <ComboBox fx:id="bookGenre" layoutX="322.0" layoutY="134.0" prefHeight="26.0" prefWidth="198.0" promptText="Genre" />
+        <DatePicker fx:id="bookPublishDate" layoutX="27.0" layoutY="94.0" prefHeight="26.0" prefWidth="198.0" promptText="Publish date" />
+        <TextField fx:id="bookPageNumber" layoutX="27.0" layoutY="54.0" prefHeight="26.0" prefWidth="198.0" promptText="Page number" />
+        <TextField fx:id="bookEdition" layoutX="322.0" layoutY="94.0" prefHeight="26.0" prefWidth="198.0" promptText="Edition" />
+        <Button layoutX="354.0" layoutY="335.0" mnemonicParsing="false" onAction="#editButtonSelected" prefHeight="26.0" prefWidth="134.0" text="Finish editing" />
+        <TextField fx:id="bookPrice" layoutX="322.0" layoutY="54.0" prefHeight="26.0" prefWidth="198.0" promptText="Price" />
+        <TextField fx:id="bookAuthors" layoutX="322.0" layoutY="14.0" prefHeight="25.0" prefWidth="198.0" promptText="Author(s)" />
+      <Button layoutX="373.0" layoutY="223.0" mnemonicParsing="false" onAction="#loadBookInfoButtonSelected" text="Load book info" />
+    </children>
+</AnchorPane>
